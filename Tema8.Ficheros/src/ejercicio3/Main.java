@@ -12,6 +12,8 @@ public class Main {
 			FileReader rutaFichero = new FileReader("src/ejercicio3/Alumnos.txt");
 
 			BufferedReader bf = new BufferedReader(rutaFichero);
+			
+			
 		} catch (FileNotFoundException e) {
 			System.err.println(e.getMessage());
 		}
