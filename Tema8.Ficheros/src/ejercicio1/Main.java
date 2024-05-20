@@ -19,10 +19,14 @@ public class Main {
 			int suma = 0;
 			int cont = 0;
 			String linea = bf.readLine();
+			String numeros[];
 
 			while (linea != null) {
-				suma += Integer.parseInt(linea);
-				cont++;
+				numeros = linea.split(" ");
+				for (String numero : numeros) {
+					suma += Double.parseDouble(numero);
+					cont++;
+				}
 				linea = bf.readLine();
 			}
 
