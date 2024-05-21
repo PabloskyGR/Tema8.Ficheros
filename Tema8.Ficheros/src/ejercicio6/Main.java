@@ -49,7 +49,7 @@ public class Main {
 				bw = new BufferedWriter(new FileWriter(archivo));
 
 				for (int num : lista) {
-					bw.write(String.valueOf(lista.get(num)));
+					bw.write(String.valueOf(num));
 					bw.newLine();
 				}
 			} catch (IOException e) {
